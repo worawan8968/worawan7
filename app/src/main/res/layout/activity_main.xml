@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/img_province"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="กรุณาเลือกจังหวัด"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_province" />
+
+    <TextView
+        android:id="@+id/tv_history"
+        android:layout_width="367dp"
+        android:layout_height="268dp"
+        android:layout_marginTop="24dp"
+        android:text="คลิกที่นี่"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_header" />
+
+    <Button
+        android:id="@+id/btn_phetcaburi"
+        android:layout_width="108dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="60dp"
+        android:text="เพรชบุรี"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_history"
+        tools:text="@string/btn_phetcaburi" />
+
+    <Button
+        android:id="@+id/btn_surattani"
+        android:layout_width="103dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="60dp"
+        android:text="สุราษฎร์ธานี"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tv_history"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="@string/btn_surattani" />
+
+    <Button
+        android:id="@+id/btn_chonburi"
+        android:layout_width="105dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="220dp"
+        android:layout_marginBottom="16dp"
+        android:text="ชลบุรี"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_history"
+        tools:text="@string/btn_chonburi" />
+
+    <Button
+        android:id="@+id/btn_phuket"
+        android:layout_width="101dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="16dp"
+        android:text="ภูเก็ต"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tv_history"
+        app:layout_constraintHorizontal_bias="0.993"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="@string/btn_phuket" />
+
+    <ImageView
+        android:id="@+id/image_province"
+        android:layout_width="415dp"
+        android:layout_height="267dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/phetcaburi"
+        tools:layout_editor_absoluteX="-3dp"
+        tools:layout_editor_absoluteY="-5dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
